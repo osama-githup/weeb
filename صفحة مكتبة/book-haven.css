@@ -1,0 +1,26 @@
+nav{
+    text-align: center;
+    border: 20px solid #12abbb;
+    border-style: dashed;
+    border-width: 1px;
+    padding-top: 2px;
+    outline: 5px;
+}
+
+h2{
+    text-align: center;
+    color: rgb(63, 2, 121);
+}
+
+h1{
+    color: #e02d00cd;
+    text-align: center;
+}
+
+a{
+    color: rgba(43, 0, 17, 0.679);
+}
+
+div{
+    display: inline-block;
+}
