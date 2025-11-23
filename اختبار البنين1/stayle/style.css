@@ -1,0 +1,185 @@
+body
+{
+    font-family: sans-serif; /*تحديد نوع الخط الذي نعمل به*/
+    padding: 0; /*هوامش داخلية حول العنصر*/
+    margin: 0;/*هوامش خارجية حول العنصر (يحدد المسافة بين العنصر والعناصر المجاورة */
+    background-color: #f4f4f4; /* لون خلفية العنصر المحدد*/
+    direction: ltr; /*يحدد اتجاه العنصر من اليمين*/
+
+}
+
+.container
+{
+    width: 90%; /*عرض العنصر حيث تاخذ 80% من مساحة الحاوية او الصفحة*/
+    margin: auto; /*auto تقوم بتوسيط العنصر داخل الحاوية وتجعل الهوامش متساوية داخل الحاوية*/
+    overflow: hidden;/*خاصية overflow في CSS تحدد كيفية تعامل المتصفح مع المحتوى الذي يتجاوز حجم العنصر (أي عندما يكون النص أو الصورة أكبر من المساحة المحددة بالـ width و height)*/
+
+}
+
+ul
+{
+    margin: 0;
+    padding: 0;
+    
+
+}
+header
+{
+    background: #353637; /*لون الخلفية*/
+    color: #ffff; /*لون الخط*/
+    padding-top: 30px; /*هامش من اعلى العنصر او الحاوية*/
+    min-height: 70px;/*خاصية min-height في CSS تُستخدم لتحديد أقل ارتفاع ممكن للعنصر. أي أنها تضمن أن العنصر لن يكون ارتفاعه أقل من القيمة المحددة، حتى لو كان المحتوى داخله صغيرًا جدًا.*/
+    border-bottom: #32a0c2 5px solid; /* يقوم بعمل خط اسفل العنصر (في هذا المثال الheader) ويضع له لون وحجم*/
+}
+
+header a
+{
+    color: #f4f4f4;
+    text-decoration: none;
+    font-size: 19px;
+}
+
+header li
+{
+    float: right ;
+    display:block;
+    border: 1px solid #ffffff;
+    border-radius: 15px;
+    padding: 15px;
+    margin: 15px;
+}
+
+header #brand
+{
+    float: right;
+}
+
+header #brand h1
+{
+    margin: 0;
+    color: #32a0c2;
+}
+
+header nav
+{
+    float: left;
+    margin-top: 20px;
+}
+
+header .current a
+{
+    color: #32a0c2;
+    font-weight: bold;
+}
+
+header a:hover
+{
+    color: #f0dc20f6;
+    font-weight: bold;
+    
+}
+
+.ad 
+{
+    min-height: 500px;
+    background: url(../img/image.jpg) no-repeat center;
+    background-size: cover;
+    text-align: center;
+    color: #ffffff;
+}
+.hc{
+    color: #32a0c2;
+}
+#newsletter{
+    padding: 15px;
+    color: #f4f4f4;
+    background: #353637;
+
+}
+#newsletter h1
+{
+   float: right; 
+}
+
+#newsletter form
+{
+    float: left;
+    margin-top: 15px;
+
+}
+#newsletter input[type="email"]
+{
+padding: 5px;
+height: 35px;
+width: 300px;
+}
+.button
+{
+height: 50px;
+background: #cccccc;
+padding-left: 20px;
+padding-right: 20px;
+color: #353637;
+}
+
+#boxes{
+    margin-top: 20px;
+
+}
+
+#boxes .box img
+{
+    width: 30%;
+    padding: 30%;
+    margin: auto;
+}
+#boxes .box
+{
+    float: right;
+    text-align: center;
+    width: 28%;
+    padding: 10px;
+    border: 1px solid #32a0c2;
+    border-radius: 30px;
+    margin: 20px;
+    text-shadow: 1px 1px 10px #32a0c2;
+
+}
+footer
+{
+    padding: 20px;
+    margin-top: 20px;
+    color: #f4f4f4;
+    background-color: #32a0c2;
+    text-align: center;
+    font-weight: bold;
+    font-size: 25px;
+}
+@media (max-width:768px)
+{
+    header #brand,
+    header nav,
+    header nav li,
+    #newsletter h1,
+    #newsletter form,
+    #boxes .box
+    {
+        float: none;
+        text-align: center;
+        width: 100%;
+    }
+    header
+    {
+        padding-bottom: 20px;
+    }
+    #newsletter .button
+    {
+        display: block;
+        width: 100%;
+    }
+    #newsletter form input[type="email"]
+    {
+        width: 100%;
+        margin-bottom: 50px;
+    }
+}
