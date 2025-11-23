@@ -1,0 +1,94 @@
+body {
+    /*يحدد عائلة الخطوط المستخدمة*/
+    font-family: 'Tahoma', Arial, sans-serif;
+    /*يحدد لون خلفية الصفحةمن النظام السداسي عشر*/
+    background-color: #f8f8fa;
+    /*يحدد اتجاه النص في الصفحة*/
+    direction: rtl;
+}
+
+header, div {
+    /* يضيف هامش ومركز العناصر*/
+    margin: 30px auto;
+    /* يحدد خلفية بيضاء للعناصر*/
+    background: #fff;
+    /*يجعل الزوايا دائرية*/
+    border-radius: 12px;
+    /*يضيف ظل للعناصر*/
+    box-shadow: 0 2px 8px #ddd;
+    padding: 24px;
+}
+/*تنسيقات الراس*/
+header {
+    /*يحاذي النص الى المنتصف*/
+    text-align: center;
+    /* يغير لون خلفية الرأس*/
+    background: #5f9ea0;
+    color: #fff;
+    /*يجعل الزوايا العلوية فقط دائرية*/
+    border-radius: 12px 12px 0 0;
+}
+
+h1 {
+    font-size: 2.2em;
+}
+
+h2 {
+    color: #446a71;
+    margin-bottom: 18px;
+}
+
+img {
+    display: block;
+    margin: 12px auto 18px auto;
+    width: 130px;
+    height: 130px;
+    /*يجعل الصورة دائرية*/
+    border-radius: 50%;
+    /*يعدل الصورة لتملأ المساحة دون تشويه*/
+    object-fit: cover;
+}
+
+ul {
+    /*مسافة بادئة للقائمة النقطية*/
+    margin-right: 25px;
+}
+
+/*النماذج*/
+form input, form textarea {
+    /*عرض مربع الحوار بالنسبة الى حجم الصفحة*/
+    width: 92%;
+    /*ضبط المسافة بين النماذج*/
+    margin: 8px 0;
+    /*ضبط المسافة الداخلية للنماذج*/
+    padding: 9px;
+    /*لون خط اطار النموذج مع حكم خط الاطار*/
+    border: 1px solid #b6c9cf;
+    border-radius: 5px;
+    font-size: 1em;
+}
+/*زر الارسال*/
+button[type="submit"] {
+    background: #5f9ea0;
+    /*لون الخط داخل زر الارسال*/
+    color: #fff;
+    /*لون زر الارسال*/
+    background: #5f9ea0;
+    /*لون الخط داخل زر الارسال*/
+    color: #fff;
+    /*ازالة خط اطار زر الارسال*/
+    border: none;
+    /*مسافة داخلية للا*/
+    padding: 10px 38px;
+    border-radius: 9px;
+    /*يغير شكل المؤشر الى يد عن المرور على زر الارسال*/
+    cursor: pointer;
+    /*حجم الخط*/
+    font-size: 1.05em;
+}
+
+footer {
+    /*محاذاه للمنتصف*/
+    text-align: center;
+    /*لون الخط*/
+    color: #879db6;
